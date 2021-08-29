@@ -1,0 +1,24 @@
+{
+  "name": "sample-lib",
+  "packageManager": "yarn@3.0.1",
+  "exports": {
+    "import": "./dist/index.js"
+  },
+  "typesVersions": {
+    "*": {
+      "dist/index.d.ts": [
+        "dist/index.d.ts"
+      ],
+      "*": [
+        "dist/*",
+        "dist/*/index.d.ts"
+      ]
+    }
+  },
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "devDependencies": {
+    "typescript": "4.4.2"
+  }
+}

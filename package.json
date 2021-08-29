@@ -1,0 +1,13 @@
+{
+    "name": "nodejs-mono-repo-2021",
+    "packageManager": "yarn@3.0.1",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "devDependencies": {
+        "@yarnpkg/pnpify": "3.0.1",
+        "@yarnpkg/sdks": "2.4.2-rc.1",
+        "typescript": "4.4.2"
+    }
+}
